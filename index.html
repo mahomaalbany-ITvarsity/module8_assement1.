@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ian="en" and dir="Itr">
+    <head>
+      <meta charset="utf-g" >
+      <title>login form</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="login2.js"> </script>
+    </head>
+    <body>
+        <form class="box" action="login.htl" method="POST">
+       
+            <H1>login</H1>
+          <input type="text" name="" placeholder="enter Username" id="username">
+          <input type="password" name="" placeholder="enter password" id="password">
+          <input type="submit" name="" value="Login" onclick="validate()">
+
+
+
+        </form>
+<script>
+function validate()
+{
+var username=document.getElementById("username").value;
+var password=document.getElementById("password").value;
+if(username=="admin" && password=="user")
+{
+    alert("login succesfully")
+    return false;
+}
+else
+{
+    alert("login failed!!!!!please try again")
+}
+
+
+}
+
+
+</script>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
